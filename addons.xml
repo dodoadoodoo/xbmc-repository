@@ -21,7 +21,7 @@
 
 <addon id="plugin.video.expressentv"
        name="Expressen TV"
-       version="0.0.2"
+       version="0.0.3"
        provider-name="Daniel, Popeye">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -33,8 +33,22 @@
     <platform>all</platform>
     <summary>Expressen TV</summary>
     <description>Watch Expressen TV</description>
-    <description lang="sv">Titta på  Expressen TV</description>
+    <description lang="sv">Titta på Expressen TV</description>
     <disclaimer></disclaimer>
   </extension>
+</addon>
+
+<addon id="repository.dodoadoodoo.xbmc-plugins" name="dodoadoodoo Add-on Repository" version="1.0.0" provider-name="dodoadoodoo">
+        <extension point="xbmc.addon.repository" name="dodoadoodoo Add-on Repository">
+                <info compressed="false">https://raw.github.com/dodoadoodoo/xbmc-repository/master/addons.xml</info>
+                <checksum>https://raw.github.com/dodoadoodoo/xbmc-repository/master/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.github.com/dodoadoodoo/xbmc-repository/master/</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary>Install Add-ons from dodoadoodoos Add-on Repository</summary>
+                <description>Video plug-ins for XBMC</description>
+                <disclaimer></disclaimer>
+                <platform>all</platform>
+        </extension>
 </addon>
 </addons>
