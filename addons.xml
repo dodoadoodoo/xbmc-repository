@@ -38,17 +38,23 @@
   </extension>
 </addon>
 
-<addon id="repository.dodoadoodoo.xbmc-plugins" name="dodoadoodoo Add-on Repository" version="1.0.0" provider-name="dodoadoodoo">
-        <extension point="xbmc.addon.repository" name="dodoadoodoo Add-on Repository">
-                <info compressed="false">https://raw.github.com/dodoadoodoo/xbmc-repository/master/addons.xml</info>
-                <checksum>https://raw.github.com/dodoadoodoo/xbmc-repository/master/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.github.com/dodoadoodoo/xbmc-repository/master/</datadir>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-                <summary>Install Add-ons from dodoadoodoos Add-on Repository</summary>
-                <description>Video plug-ins for XBMC</description>
-                <disclaimer></disclaimer>
-                <platform>all</platform>
-        </extension>
+<addon id="plugin.video.hifplay"
+       name="HIF play"
+       version="0.0.1"
+       provider-name="Daniel">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+    <import addon="script.module.beautifulsoup"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>HIF play</summary>
+    <description>Watch HIF play</description>
+    <description lang="sv">Titta på HIF play</description>
+    <disclaimer></disclaimer>
+  </extension>
 </addon>
 </addons>
